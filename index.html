@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id = "demo"></h1>
+<h1 id = "demo1"></h1>
+<h1 id = "demo2"></h1>
+<h1 id = "colourss"></h1>
+<h1 id = "demo4"></h1>
+    <script>
+var fruits =["banana", " pomegranite"," strawberry"," apple", " dragonfruit"]
+document.getElementById("demo").innerHTML = fruits[1] + " is my favourite fruit"
+fruits.push(" peaches")
+document.getElementById("demo1").innerHTML = fruits
+fruits.pop()
+document.getElementById("demo2").innerHTML = fruits.join("$")
+console.log(fruits.join(","))
+fruits.reverse()
+document.getElementById("demo1").innerHTML = fruits
+fruits.sort()
+document.getElementById("demo4").innerHTML = fruits
+
+var colours =["black" , " red" ,"teal", " orange"]
+document.getElementById("colourss").innerHTML = colours.length
+colours.sort()
+document.getElementById("demo4").innerHTML = colours
+console.log(colours)
+    </script>
+    
+</body>
+</html>
